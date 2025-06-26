@@ -82,7 +82,7 @@ create table cliente(
 	email varchar(60),
 	active bool,
 	data_de_criacao time,
-	ultima_atualizacao timestamp
+	ultima_atualizacao timestam p
 );
 
 create table endereco(
@@ -123,8 +123,8 @@ alter table loja drop column ultima_atualizacao;
 alter table loja add column ultima_atualizacao timestamp;
 
 --renomear coluna 
-alter table loja rename column ult_atual
-	to ultima_atualizacao;
+alter table loja rename column ultima_atualizacao
+	to coluna_renomeada;
 
 --alterar o tipo de dado da coluna
 alter table loja alter column ultima_atualizacao
